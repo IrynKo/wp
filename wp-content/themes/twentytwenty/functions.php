@@ -33,6 +33,7 @@
  *
  * @since Twenty Twenty 1.0
  */
+
 function generate_course_type() {
     $labels = array(
         'name'                  => 'Articles',
@@ -49,7 +50,7 @@ function generate_course_type() {
         'show_in_rest'          => true,
         'rest_base'             => 'courses',
     );
-	register_post_type( 'course_type', $args );
+	register_post_type( 'article_type', $args );
 	$meta_args = array(
         'type'         => 'number',
         'description'  => 'The price of a course.',
